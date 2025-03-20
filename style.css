@@ -1,0 +1,87 @@
+#scratchpad {
+  display: grid;
+  grid-template-columns: 2px 270px 20px auto;
+  overflow: hidden;
+}
+#board {
+  /*border: 1px solid black;*/
+  image-rendering:pixelated;
+  width: 900px;
+  height: 900px;
+}
+
+#pattern {
+  margin:0px;
+  padding:0px;
+  border: 6px solid rgb(68, 36, 52);
+  image-rendering:pixelated;
+  width: 270px;
+  height: 270px;
+  margin-bottom:25px;
+  margin-right:25px;
+
+}
+#palette-table {
+    border: 6px solid rgb(68, 36, 52);
+
+}
+
+#download {
+  margin-top:2rem;
+}
+
+h3 {
+  color: rgb(68, 36, 52);
+
+}
+#palette {
+  image-rendering:pixelated;
+  width: 270px;
+  height: 270px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+#palette-table div{
+  border: 6px solid white;
+  display: grid;
+  padding-bottom:0;
+  margin-bottom:-3px;
+  padding-bottom:0px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: 57px;
+}
+
+.swatch {
+  /*border: 1px solid black;*/
+  image-rendering:pixelated;
+  min-width:15px;
+/*  min-height:25px;
+  width: 45px;
+  height: 45px;*/
+  font-size:10px;
+}
+
+#infobox {
+  display: none !important
+  position:absolute;
+  top:0px;
+  left: 600px;
+
+}
+
+.container {
+  padding:5px;
+}
+
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.nes-container-responsive > p {
+  margin-bottom: 0rem;
+}

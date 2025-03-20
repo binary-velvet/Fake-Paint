@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fake Paint</title>
+	<link rel="stylesheet" href="style.css">
+	<!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/PSone.min.css">-->
+	<link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+	<!--font-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+	<div id="wrapper" class="container">
+		<section class="nes-container with-title" id="scratchpad">
+			<h3 class="title">Drawing</h3>
+			<div class="nes-container-responsive">
+
+				<div class="nes-container-responsive  with-title ">
+				<p class="title">Pattern</p>
+					<canvas id="pattern"  width="20" height="20">initial element</canvas>
+				</div>
+				<div class="nes-container-responsive with-title palette-table">
+				<p class="title">Palette</p>
+					<div class="" id="palette-table">
+					</div>
+				</div>
+				<div class="nes-container-responsive">
+								<button class="btn nes-btn" id="download" href="">download</button>
+				</div>
+
+			</div>
+			<div class="nes-container-responsive">
+			</div>
+			<div class="nes-container-responsive">
+				<h3 class="title">Board</h3>
+				<canvas id="board" width="120" height="120">drawing board</canvas>
+			</div>
+		</section>
+		<section class="nes-container with-title">
+
+			<h3 class="title">Helpers</h3>
+			<div class="nes-container">
+			</div>
+			<div class="nes-container">
+				<button class="btn nes-btn" id="download-board" href="">download full pattern</button>
+				<div class="nes-field is-inline">
+					<label for="repetitions_horizontal">Horizontal repetitions</label>
+					<input type="number" id="name_field" class="nes-input">
+				</div>
+				<div class="nes-field is-inline">
+					<label for="repetitions_vertical">Vertical repetitions</label>
+					<input type="number" id="name_field" class="nes-input">
+				</div>
+
+			</section>
+			<section  class="nes-container with-title">
+			</section>
+		</div>
+		<div id="infobox" width="180" height="180">information about the board
+			<div id="infobox-bounding">bounding box:<span></span></div>
+			<div id="event-coords">event coordinates:<span></span></div>
+			<div id="final-coords">final coordinates:<span></span></div>
+			<div id="scaled-coords">scaled coordinates:<span></span></div>
+		</div>
+		<script src="base.js"></script>
+	</body>
+	</html>
